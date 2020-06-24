@@ -21,7 +21,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(0, 0, 0, 0.4);
+    background: rgb(0, 0, 0, 0.6);
 }
 
 .footer-widget-title img {
@@ -137,6 +137,19 @@
     overflow: hidden;
 }
 
+.news-item {
+    float: left;
+}
+
+.media-body.body-news .mid,
+.media-body.body-news .axil-post-title {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 .nav-tabs-city {
     padding-left: 0;
     display: inline-block;
@@ -148,6 +161,10 @@
     position: relative;
     top: 8px;
     transition: 0.3s;
+}
+
+.bg-black-sub {
+    background-color: #222222;
 }
 
 .tabs-city a {
@@ -6109,7 +6126,7 @@ input[type="radio"]+label::after {
 @media (max-width: 767px) {
     .brand-logo {
         max-height: 5rem;
-        max-width: 13rem;
+        max-width: 19rem;
     }
 }
 
