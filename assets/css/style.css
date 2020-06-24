@@ -11443,6 +11443,10 @@ address .tel i {
         padding: 5px 15px;
         line-height: 25px;
     }
+
+    .slider-weather {
+        height: 80vh;
+    }
 }
 
 @media (max-width: 575px) {
