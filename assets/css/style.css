@@ -11447,6 +11447,27 @@ address .tel i {
     .slider-weather {
         height: 80vh;
     }
+
+    .content-range {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .range-poison {
+        display: flex;
+        width: 100%;
+    }
+
+    .des-whether {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .icon-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 575px) {
