@@ -47,7 +47,7 @@
 
     <!-- Page Title
     	======================================== -->
-    <title>Trang chủ</title>
+    <title>Đài khí tượng thủy văn Trung Trung Bộ</title>
     <!-- links for favicon
     	======================================== -->
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -124,6 +124,38 @@
               <div class="main-nav-wrapper">
                 <ul class="main-navigation list-inline" id="main-menu">
                   <li>
+                    <a href="./index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <a href="./organizational-structure.html">Thời tiết</a>
+                  </li>
+                  <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
+                  <li><a href="./news-detail.html">Khí tượng</a></li>
+                  <li><a href="./error-404.html">Thủy văn</a></li>
+                  <li><a href="sports.html">Môi trường</a></li>
+                </ul>
+                <!-- End of .main-navigation -->
+              </div>
+              <a
+                href="#"
+                class="side-nav-toggler"
+                id="side-nav-toggler"
+                onclick="clickShowMenu()"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <!-- End of .main-nav-wrapper -->
+              <nav class="nav-side" id="nav-side">
+                <a class="closeMenu" onclick="clickHideMenu()">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                <ul class="nav navbar-nav nav-mobile">
+                  <li>
                     <a href="#">Trang chủ</a>
                   </li>
                   <li>
@@ -137,14 +169,7 @@
                   <li><a href="technology.html">Thủy văn</a></li>
                   <li><a href="sports.html">Môi trường</a></li>
                 </ul>
-                <!-- End of .main-navigation -->
-              </div>
-              <a href="#" class="side-nav-toggler" id="side-nav-toggler">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-              <!-- End of .main-nav-wrapper -->
+              </nav>
             </div>
             <!-- End of .navbar-inner -->
           </div>
@@ -155,11 +180,21 @@
       <!-- End of .page-header -->
       <div class="slider-weather">
         <div class="content-whether">
-          <img class="img-poison" src="./assets/images/0022.png" alt="" />
-          <div class="range-poison">27°C - 37°C</div>
-          <div class="des-whether">
-            Mây thay đổi, ngày nắng nóng, chiều tối có mưa rào và dông vài nơi,
-            đêm không mưa.
+          <div class="province">Đà Nẵng</div>
+          <div class="content-range">
+            <div class="range-poison">
+              <div class="icon-content">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+              </div>
+              <div class="poison-inline">
+                <div class="lowest-temperature">37°</div>
+                <div class="maximum-temperature">27°</div>
+              </div>
+            </div>
+            <div class="des-whether">
+              Mây thay đổi, ngày nắng nóng, chiều tối có mưa rào và dông vài
+              nơi, đêm không mưa.
+            </div>
           </div>
         </div>
         <div class="list-city">
@@ -377,7 +412,7 @@
       >
         <div class="container">
           <div class="section-title m-b-xs-40">
-            <h2 class="axil-title">Thời tiết</h2>
+            <h2 class="axil-title">Hoạt động nội bộ</h2>
             <a href="#" class="btn-link">Xem tất cả</a>
           </div>
           <div class="row">
@@ -755,7 +790,7 @@
                   allowfullscreen
                 ></iframe>
                 <div
-                  class="media post-block grad-overlay__transparent position-absolute m-b-xs-30"
+                  class="media post-block grad-overlay__transparent position-absolute m-b-xs-30 videos-mb"
                 >
                   <div class="media-body media-body__big">
                     <div class="axil-media-bottom mt-auto">
@@ -966,148 +1001,255 @@
                 /></a>
               </div>
               <div class="section-title m-b-xs-40">
-                <h2 class="axil-title">Hoạt động nội bộ</h2>
+                <h2 class="axil-title">Thời tiết</h2>
               </div>
               <main class="axil-content">
-                <div class="media post-block post-block__mid m-b-xs-30">
-                  <a href="post-format-standard.html" class="align-self-center"
-                    ><img
-                      class="m-r-xs-30"
-                      src="assets/images/post/post-img-3.jpg"
-                      alt=""
-                  /></a>
-
-                  <div class="media-body">
-                    <div class="post-cat-group m-b-xs-10">
-                      <a
-                        href="business.html"
-                        class="post-cat cat-btn bg-color-blue-one"
-                        >NỘI BỘ</a
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="recent-post">
+                    <div class="axil-content">
+                      <div
+                        class="media post-block post-block__small media-weather"
                       >
-                    </div>
-                    <h3 class="axil-post-title hover-line hover-line">
-                      <a href="post-format-standard.html"
-                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
-                        Trung Bộ lần thứ VIII</a
+                        <div class="media-body">
+                          <div class="post-cat-group">
+                            <a
+                              href=""
+                              class="post-cat cat-btn bg-color-purple-one"
+                              >Thời tiết</a
+                            >
+                          </div>
+                          <h4
+                            class="axil-post-title hover-line hover-line title-limit"
+                          >
+                            <a href="post-format-standard.html"
+                              >GS.TS Trần Hồng Thái: Nâng hoạt động của ngành
+                              Khí tượng Thủy văn lên tầm cao mới</a
+                            >
+                          </h4>
+                          <div class="post-metas">
+                            <ul class="list-inline">
+                              <li>By <a href="#">Admin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="media post-block post-block__small media-weather"
                       >
-                    </h3>
-                    <p class="mid">
-                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
-                      Trung Trung Bộ đã long trọng tổ chức ...
-                    </p>
-                    <div class="post-metas">
-                      <ul class="list-inline">
-                        <li>By <a href="#">Admin</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of .post-block -->
-                <div class="media post-block post-block__mid m-b-xs-30">
-                  <a href="post-format-standard.html" class="align-self-center"
-                    ><img
-                      class="m-r-xs-30"
-                      src="assets/images/post/post-img-3.jpg"
-                      alt=""
-                  /></a>
-
-                  <div class="media-body">
-                    <div class="post-cat-group m-b-xs-10">
-                      <a
-                        href="business.html"
-                        class="post-cat cat-btn bg-color-blue-one"
-                        >NỘI BỘ</a
+                        <div class="media-body">
+                          <div class="post-cat-group">
+                            <a
+                              href=""
+                              class="post-cat cat-btn bg-color-purple-one"
+                              >Thời tiết</a
+                            >
+                          </div>
+                          <h4
+                            class="axil-post-title hover-line hover-line title-limit"
+                          >
+                            <a href="post-format-standard.html"
+                              >GS.TS Trần Hồng Thái: Nâng hoạt động của ngành
+                              Khí tượng Thủy văn lên tầm cao mới</a
+                            >
+                          </h4>
+                          <div class="post-metas">
+                            <ul class="list-inline">
+                              <li>By <a href="#">Admin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="media post-block post-block__small media-weather"
                       >
-                    </div>
-                    <h3 class="axil-post-title hover-line hover-line">
-                      <a href="post-format-standard.html"
-                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
-                        Trung Bộ lần thứ VIII</a
+                        <div class="media-body">
+                          <div class="post-cat-group">
+                            <a
+                              href=""
+                              class="post-cat cat-btn bg-color-purple-one"
+                              >Thời tiết</a
+                            >
+                          </div>
+                          <h4
+                            class="axil-post-title hover-line hover-line title-limit"
+                          >
+                            <a href="post-format-standard.html"
+                              >GS.TS Trần Hồng Thái: Nâng hoạt động của ngành
+                              Khí tượng Thủy văn lên tầm cao mới</a
+                            >
+                          </h4>
+                          <div class="post-metas">
+                            <ul class="list-inline">
+                              <li>By <a href="#">Admin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="media post-block post-block__small media-weather"
                       >
-                    </h3>
-                    <p class="mid">
-                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
-                      Trung Trung Bộ đã long trọng tổ chức ...
-                    </p>
-                    <div class="post-metas">
-                      <ul class="list-inline">
-                        <li>By <a href="#">Admin</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of .post-block -->
-                <div class="media post-block post-block__mid m-b-xs-30">
-                  <a href="post-format-standard.html" class="align-self-center"
-                    ><img
-                      class="m-r-xs-30"
-                      src="assets/images/post/post-img-3.jpg"
-                      alt=""
-                  /></a>
-
-                  <div class="media-body">
-                    <div class="post-cat-group m-b-xs-10">
-                      <a
-                        href="business.html"
-                        class="post-cat cat-btn bg-color-blue-one"
-                        >NỘI BỘ</a
-                      >
-                    </div>
-                    <h3 class="axil-post-title hover-line hover-line">
-                      <a href="post-format-standard.html"
-                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
-                        Trung Bộ lần thứ VIII</a
-                      >
-                    </h3>
-                    <p class="mid">
-                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
-                      Trung Trung Bộ đã long trọng tổ chức ...
-                    </p>
-                    <div class="post-metas">
-                      <ul class="list-inline">
-                        <li>By <a href="#">Admin</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of .post-block -->
-                <div class="media post-block post-block__mid m-b-xs-30">
-                  <a href="post-format-standard.html" class="align-self-center"
-                    ><img
-                      class="m-r-xs-30"
-                      src="assets/images/post/post-img-3.jpg"
-                      alt=""
-                  /></a>
-
-                  <div class="media-body">
-                    <div class="post-cat-group m-b-xs-10">
-                      <a
-                        href="business.html"
-                        class="post-cat cat-btn bg-color-blue-one"
-                        >NỘI BỘ</a
-                      >
-                    </div>
-                    <h3 class="axil-post-title hover-line hover-line">
-                      <a href="post-format-standard.html"
-                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
-                        Trung Bộ lần thứ VIII</a
-                      >
-                    </h3>
-                    <p class="mid">
-                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
-                      Trung Trung Bộ đã long trọng tổ chức ...
-                    </p>
-                    <div class="post-metas">
-                      <ul class="list-inline">
-                        <li>By <a href="#">Admin</a></li>
-                      </ul>
+                        <div class="media-body">
+                          <div class="post-cat-group">
+                            <a
+                              href=""
+                              class="post-cat cat-btn bg-color-purple-one"
+                              >Thời tiết</a
+                            >
+                          </div>
+                          <h4
+                            class="axil-post-title hover-line hover-line title-limit"
+                          >
+                            <a href="post-format-standard.html"
+                              >GS.TS Trần Hồng Thái: Nâng hoạt động của ngành
+                              Khí tượng Thủy văn lên tầm cao mới</a
+                            >
+                          </h4>
+                          <div class="post-metas">
+                            <ul class="list-inline">
+                              <li>By <a href="#">Admin</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </main>
-              <!-- End of .axil-content -->
+              <!-- <main class="axil-content">
+                <div class="media post-block post-block__mid m-b-xs-30">
+                  <a href="post-format-standard.html" class="align-self-center"
+                    ><img
+                      class="m-r-xs-30"
+                      src="assets/images/post/post-img-3.jpg"
+                      alt=""
+                  /></a>
+
+                  <div class="media-body">
+                    <div class="post-cat-group m-b-xs-10">
+                      <a
+                        href="business.html"
+                        class="post-cat cat-btn bg-color-blue-one"
+                        >NỘI BỘ</a
+                      >
+                    </div>
+                    <h3 class="axil-post-title hover-line hover-line">
+                      <a href="post-format-standard.html"
+                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
+                        Trung Bộ lần thứ VIII</a
+                      >
+                    </h3>
+                    <p class="mid">
+                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
+                      Trung Trung Bộ đã long trọng tổ chức ...
+                    </p>
+                    <div class="post-metas">
+                      <ul class="list-inline">
+                        <li>By <a href="#">Admin</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="media post-block post-block__mid m-b-xs-30">
+                  <a href="post-format-standard.html" class="align-self-center"
+                    ><img
+                      class="m-r-xs-30"
+                      src="assets/images/post/post-img-3.jpg"
+                      alt=""
+                  /></a>
+
+                  <div class="media-body">
+                    <div class="post-cat-group m-b-xs-10">
+                      <a
+                        href="business.html"
+                        class="post-cat cat-btn bg-color-blue-one"
+                        >NỘI BỘ</a
+                      >
+                    </div>
+                    <h3 class="axil-post-title hover-line hover-line">
+                      <a href="post-format-standard.html"
+                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
+                        Trung Bộ lần thứ VIII</a
+                      >
+                    </h3>
+                    <p class="mid">
+                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
+                      Trung Trung Bộ đã long trọng tổ chức ...
+                    </p>
+                    <div class="post-metas">
+                      <ul class="list-inline">
+                        <li>By <a href="#">Admin</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="media post-block post-block__mid m-b-xs-30">
+                  <a href="post-format-standard.html" class="align-self-center"
+                    ><img
+                      class="m-r-xs-30"
+                      src="assets/images/post/post-img-3.jpg"
+                      alt=""
+                  /></a>
+
+                  <div class="media-body">
+                    <div class="post-cat-group m-b-xs-10">
+                      <a
+                        href="business.html"
+                        class="post-cat cat-btn bg-color-blue-one"
+                        >NỘI BỘ</a
+                      >
+                    </div>
+                    <h3 class="axil-post-title hover-line hover-line">
+                      <a href="post-format-standard.html"
+                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
+                        Trung Bộ lần thứ VIII</a
+                      >
+                    </h3>
+                    <p class="mid">
+                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
+                      Trung Trung Bộ đã long trọng tổ chức ...
+                    </p>
+                    <div class="post-metas">
+                      <ul class="list-inline">
+                        <li>By <a href="#">Admin</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="media post-block post-block__mid m-b-xs-30">
+                  <a href="post-format-standard.html" class="align-self-center"
+                    ><img
+                      class="m-r-xs-30"
+                      src="assets/images/post/post-img-3.jpg"
+                      alt=""
+                  /></a>
+
+                  <div class="media-body">
+                    <div class="post-cat-group m-b-xs-10">
+                      <a
+                        href="business.html"
+                        class="post-cat cat-btn bg-color-blue-one"
+                        >NỘI BỘ</a
+                      >
+                    </div>
+                    <h3 class="axil-post-title hover-line hover-line">
+                      <a href="post-format-standard.html"
+                        >Đại hội Đảng bộ Đài Khí tượng Thủy văn khu vực Trung
+                        Trung Bộ lần thứ VIII</a
+                      >
+                    </h3>
+                    <p class="mid">
+                      Ngày 25 tháng 5 năm 2020,Đài Khí tượng Thủy văn khu vực
+                      Trung Trung Bộ đã long trọng tổ chức ...
+                    </p>
+                    <div class="post-metas">
+                      <ul class="list-inline">
+                        <li>By <a href="#">Admin</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </main> -->
             </div>
-            <!-- End of .col-lg-8 -->
             <div class="col-lg-4">
               <aside class="post-sidebar">
                 <div class="add-block-widget m-b-xs-40">
@@ -1133,7 +1275,6 @@
                         Đăng ký để cập nhật những tin mới nhất từ chúng tôi
                       </p>
                     </div>
-                    <!-- End of .section-title -->
                     <div class="subscription-form-wrapper">
                       <form action="#" class="subscription-form">
                         <div class="form-group form-group-small m-b-xs-20">
@@ -1152,14 +1293,10 @@
                           </button>
                         </div>
                       </form>
-                      <!-- End of .subscription-form -->
                     </div>
-                    <!-- End of .subscription-form-wrapper -->
                   </div>
-                  <!-- End of .newsletter-content -->
                 </div>
-                <!-- End of  .newsletter-widget -->
-                <div class="post-widget sidebar-post-widget m-b-xs-40">
+                <!-- <div class="post-widget sidebar-post-widget m-b-xs-40">
                   <div class="widget-title">
                     <h3>Thủy văn</h3>
                   </div>
@@ -1199,7 +1336,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- End of .post-block -->
                         <div class="media post-block post-block__small">
                           <a
                             href="post-format-standard.html"
@@ -1233,7 +1369,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- End of .post-block -->
                         <div class="media post-block post-block__small">
                           <a
                             href="post-format-standard.html"
@@ -1267,7 +1402,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- End of .post-block -->
                         <div class="media post-block post-block__small">
                           <a
                             href="post-format-standard.html"
@@ -1301,57 +1435,14 @@
                             </div>
                           </div>
                         </div>
-                        <!-- End of .post-block -->
-                        <div class="media post-block post-block__small">
-                          <a
-                            href="post-format-standard.html"
-                            class="align-self-center"
-                            ><img
-                              class="m-r-xs-30"
-                              src="assets/images/media/small-media-1.jpg"
-                              alt="media image"
-                          /></a>
-
-                          <div class="media-body">
-                            <div class="post-cat-group">
-                              <a
-                                href="post-format-standard.html"
-                                class="post-cat color-blue-three"
-                                >THỦY VĂN</a
-                              >
-                            </div>
-                            <h4
-                              class="axil-post-title hover-line hover-line title-limit"
-                            >
-                              <a href="post-format-standard.html"
-                                >GS.TS Trần Hồng Thái: Nâng hoạt động của ngành
-                                Khí tượng Thủy văn lên tầm cao mới</a
-                              >
-                            </h4>
-                            <div class="post-metas">
-                              <ul class="list-inline">
-                                <li>By <a href="#">Admin</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of .post-block -->
                       </div>
-                      <!-- End of .content -->
                     </div>
-                    <!-- End of .tab-pane -->
                   </div>
-                  <!-- End of .tab-content -->
-                </div>
-                <!-- End of .sidebar-post-widget -->
+                </div> -->
               </aside>
-              <!-- End of .post-sidebar -->
             </div>
-            <!-- End of .col-lg-4 -->
           </div>
-          <!-- End of .row -->
         </div>
-        <!-- End of .container -->
       </div>
       <!-- End of .random-posts -->
       <!-- <section class="related-post p-b-xs-30">
@@ -1460,7 +1551,7 @@
         <div class="container">
           <div class="footer-top">
             <div class="row">
-              <div class="col-lg-3 col-sm-6 col-12">
+              <div class="col-md-4 col-12">
                 <div class="footer-widget">
                   <h2 class="footer-widget-title">
                     <img src="assets/images/logo-black.png" alt="" />
@@ -1476,63 +1567,12 @@
                 <!-- End of .footer-widget -->
               </div>
               <!-- End of .col-lg-2 -->
-              <div class="col-lg-3 col-sm-6 col-12">
-                <div class="footer-widget">
-                  <h2 class="footer-widget-title">
-                    Tin tức
-                  </h2>
-                  <div class="footer-nav">
-                    <div class="footer-news clearfix">
-                      <a href="" class="black-hover">
-                        <img src="assets/images/footer-news.jpg" alt="" />
-                        <div class="tour-layer delay-1"></div>
-                      </a>
-                      <div class="footer-news-right">
-                        <a href=""
-                          >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
-                    </div>
-                    <div class="footer-news clearfix">
-                      <a href="" class="black-hover">
-                        <img src="assets/images/footer-news.jpg" alt="" />
-                        <div class="tour-layer delay-1"></div>
-                      </a>
-                      <div class="footer-news-right">
-                        <a href=""
-                          >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
-                    </div>
-                    <div class="footer-news clearfix">
-                      <a href="" class="black-hover">
-                        <img src="assets/images/footer-news.jpg" alt="" />
-                        <div class="tour-layer delay-1"></div>
-                      </a>
-                      <div class="footer-news-right">
-                        <a href=""
-                          >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of .footer-nav -->
-                </div>
-                <!-- End of .footer-widget -->
-              </div>
-              <!-- End of .col-lg-2 -->
-              <div class="col-lg-3 col-sm-6 col-12">
+              <div class="col-md-4 col-12">
                 <div class="footer-widget">
                   <h2 class="footer-widget-title">
                     Tags
                   </h2>
-                  <ul class="footer-nav footer-tags">
+                  <ul class="footer-nav footer-tags clearfix">
                     <li><a href="#">Giới thiệu</a></li>
                     <li><a href="#">Thời tiết</a></li>
                     <li><a href="#">Nội bộ</a></li>
@@ -1545,7 +1585,7 @@
                 <!-- End of .footer-widget -->
               </div>
               <!-- End of .col-lg-2 -->
-              <div class="col-lg-3 col-sm-6 col-12">
+              <div class="col-md-4 col-12">
                 <div class="footer-widget footer-info">
                   <h2 class="footer-widget-title">
                     Thông tin
@@ -1604,6 +1644,7 @@
       <!-- End of footer -->
     </div>
     <!-- End of .main-content -->
+    <script src="./assets/js/main.js"></script>
   </body>
 
   <!-- Mirrored from axilthemes.com/demo/template/papr/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jun 2020 07:08:13 GMT -->
