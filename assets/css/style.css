@@ -11257,7 +11257,7 @@ address .tel i {
     }
 
     .post-block.post-block__small .row {
-        width: calc(100% + 15px);
+        width: calc(100% + 30px);
     }
 
     .newsletter-content .section-title {
