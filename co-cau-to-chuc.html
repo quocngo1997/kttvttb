@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .magnify {
+        width: 100%;
+        margin: 20px auto;
+        position: relative;
+      }
+      .large {
+        width: 175px;
+        height: 175px;
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+          0 0 7px 7px rgba(0, 0, 0, 0.35),
+          inset 0 0 40px 2px rgba(0, 0, 0, 0.35);
+        background-repeat: no-repeat;
+        display: none;
+      }
+
+      .small {
+        display: block;
+      }
+      .magnify img {
+        max-width: 100%;
+      }
+    </style>
+    <div class="magnify">
+      <div
+        class="large"
+        style="background-image: url('./assets/images/co-cau-03-vi.jpg');"
+      >
+        &nbsp;
+      </div>
+      <img class="small" src="./assets/images/co-cau-03-vi.jpg" width="100%" />
+    </div>
+    <script>
+      var ob = 9;
+      function zoomImageAbout() {
+        if (ob == 9) {
+          var native_width = 0;
+          var native_height = 0;
+          $(".magnify").mousemove(function (e) {
+            if (!native_width && !native_height) {
+              var image_object = new Image();
+              image_object.src = $(".small").attr("src");
+
+              native_width = image_object.width;
+
+              native_height = image_object.height;
+            } else {
+              var magnify_offset = $(this).offset();
+
+              var mx = e.pageX - magnify_offset.left;
+
+              var my = e.pageY - magnify_offset.top;
+
+              if (
+                mx < $(this).width() &&
+                my < $(this).height() &&
+                mx > 0 &&
+                my > 0
+              ) {
+                $(".large").fadeIn(100);
+              } else {
+                $(".large").fadeOut(100);
+              }
+
+              if ($(".large").is(":visible")) {
+                var rx =
+                  Math.round(
+                    (mx / $(".small").width()) * native_width -
+                      $(".large").width() / 2
+                  ) * -1;
+
+                var ry =
+                  Math.round(
+                    (my / $(".small").height()) * native_height -
+                      $(".large").height() / 2
+                  ) * -1;
+
+                var bgp = rx + "px " + ry + "px";
+
+                var px = mx - $(".large").width() / 2;
+
+                var py = my - $(".large").height() / 2;
+
+                $(".large").css({
+                  left: px,
+                  top: py,
+                  backgroundPosition: bgp,
+                });
+              }
+            }
+          });
+        }
+      }
+    </script>
+    <script src="./assets/js/jquery.min7a93.js"></script>
+    <script src="./assets/js/BatchScripts.js"></script>
+    <script src="./assets/js/jquery.smartmenus.mina6e7.js"></script>
+    <script src="./assets/js/jquery.bxslidera6e7.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="text/javascript">
+      zoomImageAbout();
+    </script>
+  </body>
+</html>
