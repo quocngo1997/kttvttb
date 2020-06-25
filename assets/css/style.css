@@ -1,4 +1,7 @@
 /* co cau to chuc  */
+.content-structure {
+    margin-top: 6rem;
+}
 
 .content-structure * {
     -webkit-box-sizing: border-box;
@@ -315,6 +318,10 @@
     width: 95%;
     top: 39px;
     background-image: none !important;
+}
+
+.content-structure .phone-email {
+    background: #f9f9f9;
 }
 
 /* Department/ section colors */
