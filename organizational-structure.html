@@ -1,14 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="zxx">
-<!--<![endif]-->
-
-<!-- Mirrored from axilthemes.com/demo/template/papr/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jun 2020 07:15:05 GMT -->
-
-<head>
+<html lang="en">
+  <head>
     <!-- Basic metas
     ======================================== -->
     <meta charset="utf-8" />
@@ -19,15 +11,25 @@
     <!-- Mobile specific metas
     ======================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Papr" />
     <meta name="twitter:creator" content="@Papr" />
     <meta name="twitter:title" content="Papr" />
-    <meta name="twitter:description" content="Papr Trendy News and Megazine Template" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" />
+    <meta
+      name="twitter:description"
+      content="Papr Trendy News and Megazine Template"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/favicon.ico"
+    />
     <meta name="twitter:image" content="assets/images/papr.png" />
 
     <!-- Page Title
@@ -38,359 +40,398 @@
 
     <!-- Icon fonts
 	======================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/fontawesome-all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/iconfont.css" />
 
     <!-- css links
 	======================================== -->
     <!-- Bootstrap link -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendor/bootstrap.min.css"
+    />
 
     <!-- Magnific popup -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendor/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendor/magnific-popup.css"
+    />
 
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendor/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendor/animate.css"
+    />
 
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-</head>
+  </head>
+  <body>
+    <style>
+      .magnify {
+        width: 100%;
+        margin: 20px auto;
+        position: relative;
+      }
+      .large {
+        width: 175px;
+        height: 175px;
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+          0 0 7px 7px rgba(0, 0, 0, 0.35),
+          inset 0 0 40px 2px rgba(0, 0, 0, 0.35);
+        background-repeat: no-repeat;
+        display: none;
+      }
 
-<body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- Main contents
-	================================================ -->
+      .small {
+        display: block;
+      }
+      .magnify img {
+        max-width: 100%;
+      }
+    </style>
     <div class="main-content">
-        <!-- Header starts -->
-        <header class="page-header-sub">
-            <!-- End of .header-top -->
-            <nav class="navbar bg-black-sub">
-                <div class="container">
-                    <div class="navbar-inner">
-                        <div class="brand-logo-container">
-                            <a href="./index.html">
-                                <img src="assets/images/logo-black.png" alt="" class="brand-logo" />
-                            </a>
-                        </div>
-                        <!-- End of .brand-logo-container -->
-                        <div class="main-nav-wrapper">
-                            <ul class="main-navigation list-inline" id="main-menu">
-                                <li>
-                                    <a href="./index.html">Trang chủ</a>
-                                </li>
-                                <li>
-                                    <a href="./about-us.html">Giới thiệu</a>
-                                </li>
-                                <li>
-                                    <a href="./organizational-structure.html">Thời tiết</a>
-                                </li>
-                                <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
-                                <li><a href="./news-detail.html">Khí tượng</a></li>
-                                <li><a href="./error-404.html">Thủy văn</a></li>
-                                <li><a href="sports.html">Môi trường</a></li>
-                            </ul>
-                            <!-- End of .main-navigation -->
-                        </div>
-                        <a href="#" class="side-nav-toggler" id="side-nav-toggler" onclick="clickShowMenu()">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <!-- End of .main-nav-wrapper -->
-                        <nav class="nav-side" id="nav-side">
-                            <a class="closeMenu" onclick="clickHideMenu()">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </a>
-                            <ul class="nav navbar-nav nav-mobile">
-                                <li>
-                                    <a href="./index.html">Trang chủ</a>
-                                </li>
-                                <li>
-                                    <a href="./about-us.html">Giới thiệu</a>
-                                </li>
-                                <li>
-                                    <a href="./organizational-structure.html">Thời tiết</a>
-                                </li>
-                                <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
-                                <li><a href="./news-detail.html">Khí tượng</a></li>
-                                <li><a href="./error-404.html">Thủy văn</a></li>
-                                <li><a href="#">Môi trường</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- End of .navbar-inner -->
-                </div>
-                <!-- End of .container -->
-            </nav>
-            <!-- End of .navbar -->
-        </header>
-        <!-- End of .page-header -->
-
-        <div class="breadcrumb-wrapper">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index-2.html">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Cơ cấu tổ chức
-                        </li>
-                    </ol>
-                    <!-- End of .breadcrumb -->
-                </nav>
+      <header class="page-header-sub">
+        <!-- End of .header-top -->
+        <nav class="navbar bg-black-sub">
+          <div class="container">
+            <div class="navbar-inner">
+              <div class="brand-logo-container">
+                <a href="./index.html">
+                  <img
+                    src="assets/images/logo-black.png"
+                    alt=""
+                    class="brand-logo"
+                  />
+                </a>
+              </div>
+              <!-- End of .brand-logo-container -->
+              <div class="main-nav-wrapper">
+                <ul class="main-navigation list-inline" id="main-menu">
+                  <li>
+                    <a href="./index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <a href="./organizational-structure.html">Thời tiết</a>
+                  </li>
+                  <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
+                  <li><a href="./news-detail.html">Khí tượng</a></li>
+                  <li><a href="./error-404.html">Thủy văn</a></li>
+                  <li><a href="sports.html">Môi trường</a></li>
+                </ul>
+                <!-- End of .main-navigation -->
+              </div>
+              <a
+                href="#"
+                class="side-nav-toggler"
+                id="side-nav-toggler"
+                onclick="clickShowMenu()"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <!-- End of .main-nav-wrapper -->
+              <nav class="nav-side" id="nav-side">
+                <a class="closeMenu" onclick="clickHideMenu()">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                <ul class="nav navbar-nav nav-mobile">
+                  <li>
+                    <a href="./index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <a href="./organizational-structure.html">Thời tiết</a>
+                  </li>
+                  <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
+                  <li><a href="./news-detail.html">Khí tượng</a></li>
+                  <li><a href="./error-404.html">Thủy văn</a></li>
+                  <li><a href="#">Môi trường</a></li>
+                </ul>
+              </nav>
             </div>
-            <!-- End of .container -->
+            <!-- End of .navbar-inner -->
+          </div>
+          <!-- End of .container -->
+        </nav>
+        <!-- End of .navbar -->
+      </header>
+      <!-- End of .page-header -->
+      <div class="breadcrumb-wrapper">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index-2.html">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Cơ cấu tổ chức
+              </li>
+            </ol>
+            <!-- End of .breadcrumb -->
+          </nav>
         </div>
-        <!-- End of .breadcrumb-container -->
-
-        <!-- Banner starts -->
-        <section class="banner banner__default bg-grey-light-three">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
-                        <div class="post-title-wrapper">
-                            <h2 class="m-b-xs-0 axil-post-title hover-line">Cơ cấu tổ chức</h2>
-                        </div>
-                        <!-- End of .post-title-wrapper -->
-                    </div>
-                    <!-- End of .col-lg-8 -->
-                </div>
+        <!-- End of .container -->
+      </div>
+    </div>
+    <section class="banner banner__default bg-grey-light-three">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="post-title-wrapper">
+              <h2 class="m-b-xs-0 axil-post-title hover-line">
+                Cơ cấu tổ chức
+              </h2>
             </div>
-            <!-- End of .container -->
-        </section>
-        <!-- End of .banner -->
-
-        <div class="axil-about-us section-gap-top p-b-xs-20">
-            <div class="container">
-                <figure class="m-b-xs-40">
-                    <img src="assets/images/about-us.jpg" alt="about us" class="img-fluid mx-auto" />
-                </figure>
-
-                <div class="row">
-                    <div class="col-12">
-                        <br>
-                        <strong>CƠ CẤU TỔ CHỨC</strong></br>
-                        <strong>ĐÀI KHÍ TƯỢNG THỦY VĂN KHU VỰC TRUNG TRUNG BỘ</strong></br>
-                        Đài Khí tượng Thuỷ văn khu vực Trung Trung Bộ</br>
-                        trực thuộc Tổng cục Khí tượng Thủy văn</br>
-                        Bộ Tài Nguyên và Môi trường.</br>
-                        Căn cứ Quyết định số 690/QĐ-BTNMT ngày 08 tháng 3 năm 2018 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Khí tượng Thủy văn khu vực Trung Trung Bộ trực thuộc Tổng cục Khí tượng Thủy văn.</br>
-                        Địa chỉ : 660 Trưng Nữ Vương - Thành phố Đà Nẵng</br>
-                        Điện thoại : 0236 3618139</br>
-                        Phạm vi hoạt động trên 6 tỉnh thành: Quảng Bình, Quảng Trị, Thừa Thiên Huế, Đà Nẵng, Quảng Nam, Quảng Ngãi.</br>
-                        </p>
-
-                        <h3 class="h4 m-t-lg-30">I. Lãnh đạo đài</h3>
-
-                        <p>
-                            <strong>Giám đốc: Ông Đinh Phùng Bảo</strong></br>
-                            Điện thoại: 0236 3634399; di động: 0913 422651</br>
-                            Email: <a href="mailto:phungbao@gmail.com">phungbao@gmail.com</a></br>
-                            </br>
-                            <strong>Phó giám đốc: Ông Lê Viết Xê</strong></br>
-                            Điện thoại: 0236 3618628; di động: 0916 019119</br>
-                            Email: <a href="mailto:levietxekttv@gmail.com">levietxekttv@gmail.com</a></br>
-                            </br>
-                            <strong>Phó giám đốc: Ông Phạm Văn Chiến</strong></br>
-                            Điện thoại: 0914 000795</br>
-                            Email: <a href="mailto:pvchien@gmail.com">pvchien@gmail.com</a></br>
-                        </p>
-
-                        <h3 class="h4 m-t-lg-30">II. Các phòng chức năng</h3>
-
-                        <p>
-                            <strong>Đài có 6 phòng chức năng:</strong></br>
-                            <a href="#">1. Văn phòng</a></br>
-                            <a href="#">2. Kế hoạch Tài chính </a></br>
-                            <a href="#">3. Dự báo</a></br>
-                            <a href="#">4.Quản lý mạng lưới trạm</a></br>
-                            <a href="#">5. Thí nghiệm và Phân tích Môi trường khu vực II</a></br>
-                            <a href="#">6. Thông tin & dữ liệu KTTV</a></br>
-                        </p>
-
-                        <h3 class="h4 m-t-lg-40">III. Các đài khí tượng thủy văn tỉnh</h3>
-
-                        <p>
-                            <strong>Đài có 5 Đài khí tượng thủy văn tỉnh trực thuộc:</strong></br>
-                            <a href="#">1. Đài Khí tượng Thủy văn tỉnh Quảng Bình</a></br>
-                            <a href="#">2. Đài Khí tượng Thủy văn tỉnh Quảng Trị</a></br>
-                            <a href="#">3. Đài Khí tượng Thủy văn tỉnh Thừa Thiên Huế</a></br>
-                            <a href="#">4. Đài Khí tượng Thủy văn tỉnh Quảng Nam</a></br>
-                            <a href="#">5. Đài Khí tượng Thủy văn tỉnh Quảng Ngãi</a></br>
-                        </p>
-
-                        <h3 class="h4 m-t-lg-40">IV. Mạng lưới trạm</h3>
-                        <p>
-                            <strong>Mạng lưới trạm đo trên địa bàn 6 tỉnh, thành gồm:</strong></br>
-                            <a href="#">1. Khí tượng: Có 15 trạm khí tượng bề mặt.</a></br>
-                            <a href="#">2. Thủy văn: Có 26 trạm Thuỷ văn.</a></br>
-                            <a href="#">3. Hải văn: 01 trạm Hải văn.</a></br>
-                            <a href="#">4. Cao không: 01 trạm Cao không.</a></br>
-                            <a href="#">5. Rada thời tiết: 02 trạm Ra đa Thời tiết.</a></br>
-                            <a href="#">6. Mạng lưới trạm tự động: 74 trạm</a></br>
-                        </p>
-                    </div>
-                    <!-- End of .col-lg-8 -->
-                </div>
-                <!-- End of .row -->
-            </div>
-            <!-- End of .container -->
+            <!-- End of .post-title-wrapper -->
+          </div>
+          <!-- End of .col-lg-8 -->
         </div>
-        <!-- End of .section-gap -->
-
-        <!-- footer starts -->
-        <footer class="page-footer bg-grey-dark-key">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="footer-widget">
-                                <h2 class="footer-widget-title">
-                                    <img src="assets/images/logo-black.png" alt="" />
-                                </h2>
-                                <div class="footer-nav">
-                                    Căn cứ Quyết định số 690/QĐ-BTNMT ngày 08 tháng 3 năm 2018 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Khí tượng Thủy văn khu vực Trung Trung Bộ
-                                </div>
-                                <!-- End of .footer-nav -->
-                            </div>
-                            <!-- End of .footer-widget -->
-                        </div>
-                        <!-- End of .col-lg-2 -->
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div class="footer-widget">
-                                <h2 class="footer-widget-title">
-                                    Tin tức
-                                </h2>
-                                <div class="footer-nav">
-                                    <div class="footer-news clearfix">
-                                        <a href="" class="black-hover">
-                                            <img src="assets/images/footer-news.jpg" alt="" />
-                                            <div class="tour-layer delay-1"></div>
-                                        </a>
-                                        <div class="footer-news-right">
-                                            <a href="">Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
-                    </div>
-                    <div class="footer-news clearfix">
-                      <a href="" class="black-hover">
-                        <img src="assets/images/footer-news.jpg" alt="" />
-                        <div class="tour-layer delay-1"></div>
-                      </a>
-                                            <div class="footer-news-right">
-                                                <a href="">Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
-                    </div>
-                    <div class="footer-news clearfix">
-                      <a href="" class="black-hover">
-                        <img src="assets/images/footer-news.jpg" alt="" />
-                        <div class="tour-layer delay-1"></div>
-                      </a>
-                                                <div class="footer-news-right">
-                                                    <a href="">Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
-                          tình nguyện</a
-                        >
-                        <div class="day_news">26/05/2016</div>
-                      </div>
+      </div>
+      <!-- End of .container -->
+    </section>
+    <div class="magnify">
+      <div
+        class="large"
+        style="background-image: url('./assets/images/co-cau-03-vi.jpg');"
+      >
+        &nbsp;
+      </div>
+      <img class="small" src="./assets/images/co-cau-03-vi.jpg" width="100%" />
+    </div>
+    <footer class="page-footer bg-grey-dark-key">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="footer-widget">
+                <h2 class="footer-widget-title">
+                  <img src="assets/images/logo-black.png" alt="" />
+                </h2>
+                <div class="footer-nav">
+                  Căn cứ Quyết định số 690/QĐ-BTNMT ngày 08 tháng 3 năm 2018 của
+                  Bộ trưởng Bộ Tài nguyên và Môi trường quy định chức năng,
+                  nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Khí tượng Thủy
+                  văn khu vực Trung Trung Bộ
+                </div>
+                <!-- End of .footer-nav -->
+              </div>
+              <!-- End of .footer-widget -->
+            </div>
+            <!-- End of .col-lg-2 -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="footer-widget">
+                <h2 class="footer-widget-title">
+                  Tin tức
+                </h2>
+                <div class="footer-nav">
+                  <div class="footer-news clearfix">
+                    <a href="" class="black-hover">
+                      <img src="assets/images/footer-news.jpg" alt="" />
+                      <div class="tour-layer delay-1"></div>
+                    </a>
+                    <div class="footer-news-right">
+                      <a href=""
+                        >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
+                        tình nguyện</a
+                      >
+                      <div class="day_news">26/05/2016</div>
                     </div>
                   </div>
-                  <!-- End of .footer-nav -->
-                </div>
-                <!-- End of .footer-widget -->
-              </div>
-              <!-- End of .col-lg-2 -->
-              <div class="col-lg-3 col-sm-6 col-12">
-                <div class="footer-widget">
-                  <h2 class="footer-widget-title">
-                    Tags
-                  </h2>
-                  <ul class="footer-nav footer-tags">
-                    <li><a href="#">Giới thiệu</a></li>
-                                                    <li><a href="#">Thời tiết</a></li>
-                                                    <li><a href="#">Nội bộ</a></li>
-                                                    <li><a href="#">Khí tượng</a></li>
-                                                    <li><a href="#">Thủy văn</a></li>
-                                                    <li><a href="#">Môi trường</a></li>
-                                                    </ul>
-                                                    <!-- End of .footer-nav -->
-                                                </div>
-                                                <!-- End of .footer-widget -->
-                                            </div>
-                                            <!-- End of .col-lg-2 -->
-                                            <div class="col-lg-3 col-sm-6 col-12">
-                                                <div class="footer-widget footer-info">
-                                                    <h2 class="footer-widget-title">
-                                                        Thông tin
-                                                    </h2>
-                                                    <div class="footer-nav">
-                                                        <div class="footer-contact">
-                                                            <i class="fa fa-address-book" aria-hidden="true"></i>
-                                                            <span>660 Trưng Nữ Vương - Quận Hải Châu – Đà Nẵng</span>
-                                                        </div>
-                                                        <div class="footer-contact">
-                                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                                            <a href="tel:0236 3 618630">0236 3 618630</a> &nbsp;&nbsp;-&nbsp;&nbsp;
-                                                            <i class="fa fa-fax" aria-hidden="true"></i>
-                                                            <a href="tel:02363 618139">02363 618139</a>
-                                                        </div>
-                                                        <div class="footer-contact">
-                                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                            <a href="mailto:webmaster@kttvttb.vn">webmaster@kttvttb.vn</a
+                  <div class="footer-news clearfix">
+                    <a href="" class="black-hover">
+                      <img src="assets/images/footer-news.jpg" alt="" />
+                      <div class="tour-layer delay-1"></div>
+                    </a>
+                    <div class="footer-news-right">
+                      <a href=""
+                        >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
+                        tình nguyện</a
                       >
+                      <div class="day_news">26/05/2016</div>
                     </div>
-                    <ul class="social-share social-share__with-bg">
-                      <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><i class="fab fa-behance"></i></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                            </li>
-                                                            </ul>
-                                                        </div>
-                                                        <!-- End of .footer-nav -->
-                                                    </div>
-                                                    <!-- End of .footer-widget -->
-                                                </div>
-                                                <!-- End of .col-lg-2 -->
-                                            </div>
-                                            <!-- End of .row -->
-                                        </div>
-                                        <!-- End of .footer-top -->
-                                        <div class="footer-bottom">
-                                            <p class="axil-copyright-txt">
-                                                Bản quyền : Đài Khí tượng Thủy văn khu vực Trung Trung Bộ
-                                            </p>
-                                        </div>
-                                        <!-- End of .footer-bottom -->
-                                    </div>
-                                    <!-- End of .container -->
-        </footer>
-        <!-- End of footer -->
+                  </div>
+                  <div class="footer-news clearfix">
+                    <a href="" class="black-hover">
+                      <img src="assets/images/footer-news.jpg" alt="" />
+                      <div class="tour-layer delay-1"></div>
+                    </a>
+                    <div class="footer-news-right">
+                      <a href=""
+                        >Bộ trưởng Trần Hồng Hà cùng lãnh đạo Bộ TNMT hiến máu
+                        tình nguyện</a
+                      >
+                      <div class="day_news">26/05/2016</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of .footer-nav -->
+              </div>
+              <!-- End of .footer-widget -->
+            </div>
+            <!-- End of .col-lg-2 -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="footer-widget">
+                <h2 class="footer-widget-title">
+                  Tags
+                </h2>
+                <ul class="footer-nav footer-tags">
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Thời tiết</a></li>
+                  <li><a href="#">Nội bộ</a></li>
+                  <li><a href="#">Khí tượng</a></li>
+                  <li><a href="#">Thủy văn</a></li>
+                  <li><a href="#">Môi trường</a></li>
+                </ul>
+                <!-- End of .footer-nav -->
+              </div>
+              <!-- End of .footer-widget -->
+            </div>
+            <!-- End of .col-lg-2 -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <div class="footer-widget footer-info">
+                <h2 class="footer-widget-title">
+                  Thông tin
+                </h2>
+                <div class="footer-nav">
+                  <div class="footer-contact">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <span>660 Trưng Nữ Vương - Quận Hải Châu – Đà Nẵng</span>
+                  </div>
+                  <div class="footer-contact">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:0236 3 618630">0236 3 618630</a>
+                    &nbsp;&nbsp;-&nbsp;&nbsp;
+                    <i class="fa fa-fax" aria-hidden="true"></i>
+                    <a href="tel:02363 618139">02363 618139</a>
+                  </div>
+                  <div class="footer-contact">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:webmaster@kttvttb.vn"
+                      >webmaster@kttvttb.vn</a
+                    >
+                  </div>
+                  <ul class="social-share social-share__with-bg">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End of .footer-nav -->
+              </div>
+              <!-- End of .footer-widget -->
+            </div>
+            <!-- End of .col-lg-2 -->
+          </div>
+          <!-- End of .row -->
         </div>
-        <!-- End of .main-content -->
-        <script src="./assets/js/main.js"></script>
-</body>
+        <!-- End of .footer-top -->
+        <div class="footer-bottom">
+          <p class="axil-copyright-txt">
+            Bản quyền : Đài Khí tượng Thủy văn khu vực Trung Trung Bộ
+          </p>
+        </div>
+        <!-- End of .footer-bottom -->
+      </div>
+      <!-- End of .container -->
+    </footer>
+    <script>
+      var ob = 9;
+      function zoomImageAbout() {
+        if (ob == 9) {
+          var native_width = 0;
+          var native_height = 0;
+          $(".magnify").mousemove(function (e) {
+            if (!native_width && !native_height) {
+              var image_object = new Image();
+              image_object.src = $(".small").attr("src");
 
-<!-- Mirrored from axilthemes.com/demo/template/papr/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jun 2020 07:15:59 GMT -->
+              native_width = image_object.width;
 
+              native_height = image_object.height;
+            } else {
+              var magnify_offset = $(this).offset();
+
+              var mx = e.pageX - magnify_offset.left;
+
+              var my = e.pageY - magnify_offset.top;
+
+              if (
+                mx < $(this).width() &&
+                my < $(this).height() &&
+                mx > 0 &&
+                my > 0
+              ) {
+                $(".large").fadeIn(100);
+              } else {
+                $(".large").fadeOut(100);
+              }
+
+              if ($(".large").is(":visible")) {
+                var rx =
+                  Math.round(
+                    (mx / $(".small").width()) * native_width -
+                      $(".large").width() / 2
+                  ) * -1;
+
+                var ry =
+                  Math.round(
+                    (my / $(".small").height()) * native_height -
+                      $(".large").height() / 2
+                  ) * -1;
+
+                var bgp = rx + "px " + ry + "px";
+
+                var px = mx - $(".large").width() / 2;
+
+                var py = my - $(".large").height() / 2;
+
+                $(".large").css({
+                  left: px,
+                  top: py,
+                  backgroundPosition: bgp,
+                });
+              }
+            }
+          });
+        }
+      }
+    </script>
+    <script src="./assets/js/jquery.min7a93.js"></script>
+    <script src="./assets/js/BatchScripts.js"></script>
+    <script src="./assets/js/jquery.smartmenus.mina6e7.js"></script>
+    <script src="./assets/js/jquery.bxslidera6e7.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="text/javascript">
+      zoomImageAbout();
+    </script>
+  </body>
 </html>
