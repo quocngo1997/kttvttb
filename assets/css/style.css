@@ -1,6 +1,6 @@
 /* co cau to chuc  */
 .content-structure {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .content-structure * {
@@ -8,6 +8,10 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
+}
+
+.content-structure a {
+    cursor: pointer;
 }
 
 .content-structure .cf:before,
@@ -42,12 +46,12 @@
     list-style: none;
 }
 
-.content-structure ul a {
+.content-structure ul .custom-general {
     display: block;
     background: #fff;
     border: 4px solid #ccc;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -63,19 +67,44 @@
     justify-content: center;
 }
 
+.content-structure .tooltiptext {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: -1px;
+    top: calc(100% + 32px);
+    width: 90%;
+    text-align: center;
+    height: 83px;
+    border: 4px solid #ccc;
+    visibility: hidden;
+}
+
+.content-structure .tooltiptext>div {
+    background: #ffffff;
+    line-height: 2.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+.content-structure .section:hover .tooltiptext {
+    visibility: visible;
+    box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.1);
+    /* top: calc(100% + 43px); */
+    /* width: 95%; */
+    /* transition: all linear .1s; */
+}
+
 @media print {
-    .content-structure ul a {
+    .content-structure ul .custom-general {
         border: 4px solid #000;
     }
 }
 
-.content-structure ul a span {
+.content-structure ul .custom-general span {
     line-height: 2.5rem;
 }
-
-/*
- 
- */
 
 .content-structure .administration>li>a {
     margin-bottom: 25px;
@@ -114,11 +143,11 @@
 
 .content-structure .subdirector>li:first-child,
 .content-structure .departments>li:first-child {
-    width: 18.59894921190893%;
-    height: 64px;
-    margin: 0 auto 92px auto;
-    padding-top: 25px;
-    border-bottom: 4px solid #cccccc;
+    /* width: 18.59894921190893%; */
+    /* height: 64px; */
+    /* margin: 0 auto 92px auto; */
+    /* padding-top: 25px; */
+    /* border-bottom: 4px solid #cccccc; */
     z-index: 1;
 }
 
@@ -142,11 +171,11 @@
     }
 }
 
-.content-structure .departments>li:first-child {
+/* .content-structure .departments>li:first-child {
     float: left;
     left: 27%;
     border-right: 4px solid #cccccc;
-}
+} */
 
 @media print {
     .content-structure .departments>li:first-child {
@@ -154,10 +183,10 @@
     }
 }
 
-.content-structure .subdirector>li:first-child a,
+/* .content-structure .subdirector>li:first-child a,
 .content-structure .departments>li:first-child a {
     width: 100%;
-}
+} */
 
 .content-structure .subdirector>li:first-child a {
     left: 25px;
@@ -189,17 +218,17 @@
     border-left: none;
 }
 
-.content-structure .departments>li:first-child a {
+/* .content-structure .departments>li:first-child a {
     right: 25px;
-}
+} */
 
-.content-structure .department:first-child,
+/* .content-structure .department:first-child,
 .content-structure .departments li:nth-child(2) {
     margin-left: 0;
     clear: left;
-}
+} */
 
-.content-structure .departments:after {
+/* .content-structure .departments:after {
     content: "";
     display: block;
     position: absolute;
@@ -211,7 +240,7 @@
     margin: 0 auto;
     top: 130px;
     left: 9.1%
-}
+} */
 
 @media print {
     .content-structure .departments:after {
@@ -229,7 +258,7 @@
     }
 }
 
-.content-structure .department:before {
+/* .content-structure .department:before {
     content: "";
     display: block;
     position: absolute;
@@ -240,6 +269,9 @@
     top: -22px;
     left: 50%;
     margin-left: -4px;
+} */
+.content-structure .department:first-child {
+    margin-left: 0;
 }
 
 @media print {
@@ -286,13 +318,78 @@
     height: 80px;
 }
 
+.content-structure .department li.section-01 {
+    height: 169px;
+}
+
+.content-structure .section.section-02 .tooltiptext {
+    height: 258px;
+}
+
+.content-structure .department li.section-01 a {
+    height: 150px;
+}
+
+.content-structure .department li.section-02 {
+    height: 169px;
+}
+
+.content-structure .department li.section-02 a {
+    height: 150px;
+}
+
+.content-structure .section.section-01 .tooltiptext {
+    height: 260px;
+}
+
+.content-structure .department li.section-03 {
+    height: 213px;
+}
+
+.content-structure .department li.section-03 a {
+    height: 195px;
+}
+
+.content-structure .section.section-03 .tooltiptext {
+    height: 308px;
+}
+
+.content-structure .department li.section-04 {
+    height: 140px;
+}
+
+.content-structure .department li.section-04 a {
+    height: 120px;
+}
+
+.content-structure .section.section-04 .tooltiptext {
+    height: 233px;
+}
+
+.content-structure .department li.section-05 {
+    height: 140px;
+}
+
+.content-structure .radio-custom {
+    text-decoration: underline;
+}
+
+.content-structure .department li.section-05 .height-col {
+    height: 120px;
+    cursor: pointer;
+}
+
+.content-structure .section.section-05 .tooltiptext {
+    height: 233px;
+}
+
 @media print {
     .content-structure .department li {
         border-bottom: 4px solid #000;
     }
 }
 
-.content-structure .department li a {
+.content-structure .department li .custom-frame {
     background: #fff;
     top: 48px;
     position: absolute;
@@ -312,11 +409,11 @@
     padding: 5px;
 }
 
-.content-structure .department li a:hover {
+.content-structure .department li .custom-frame:hover {
     box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.1);
-    height: 80px;
-    width: 95%;
-    top: 39px;
+    /* height: 80px; */
+    /* width: 95%; */
+    /* top: 39px; */
     background-image: none !important;
 }
 
@@ -333,7 +430,7 @@
     background: #AAD4E7;
 }
 
-.content-structure .department.dep-c a {
+.content-structure .department.dep-c .custom-c {
     background: #FDB0FD;
 }
 
@@ -351,7 +448,7 @@
     }
 
     .content-structure .department li a,
-    .content-structure ul a {
+    .content-structure ul .custom-general {
         height: 85px;
     }
 
@@ -495,6 +592,7 @@
     letter-spacing: 1px;
     transition: 0.3s;
     cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .gallery-thumbs .swiper-slide-thumb-active,
