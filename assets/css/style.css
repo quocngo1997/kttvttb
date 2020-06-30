@@ -5412,7 +5412,7 @@ figure {
 }
 
 .color-blue-one {
-    color: var(--color-blue-one);
+    color: var(--color-blue-one) !important;
 }
 
 .color-blue-two {
