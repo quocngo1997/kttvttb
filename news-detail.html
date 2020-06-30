@@ -71,13 +71,6 @@
   </head>
 
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
     <!-- Main contents
 		================================================ -->
     <div class="main-content">
@@ -106,12 +99,12 @@
                     <a href="./about-us.html">Giới thiệu</a>
                   </li>
                   <li>
-                    <a href="./organizational-structure.html">Thời tiết</a>
+                    <a href="./news-category.html">Thời tiết</a>
                   </li>
                   <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
-                  <li><a href="./news-detail.html">Khí tượng</a></li>
-                  <li><a href="./error-404.html">Thủy văn</a></li>
-                  <li><a href="sports.html">Môi trường</a></li>
+                  <li><a href="./news-category.html">Khí tượng</a></li>
+                  <li><a href="./news-category.html">Thủy văn</a></li>
+                  <li><a href="./news-category.html">Môi trường</a></li>
                 </ul>
                 <!-- End of .main-navigation -->
               </div>
@@ -138,12 +131,12 @@
                     <a href="./about-us.html">Giới thiệu</a>
                   </li>
                   <li>
-                    <a href="./organizational-structure.html">Thời tiết</a>
+                    <a href="./news-category.html">Thời tiết</a>
                   </li>
                   <li><a href="./news-category.html">Hoạt động nội bộ</a></li>
-                  <li><a href="./news-detail.html">Khí tượng</a></li>
-                  <li><a href="./error-404.html">Thủy văn</a></li>
-                  <li><a href="#">Môi trường</a></li>
+                  <li><a href="./news-category.html">Khí tượng</a></li>
+                  <li><a href="./news-category.html">Thủy văn</a></li>
+                  <li><a href="./news-category.html">Môi trường</a></li>
                 </ul>
               </nav>
             </div>
@@ -158,8 +151,8 @@
         <div class="container">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-              <li class="breadcrumb-item"><a href="#">Khí tượng</a></li>
+              <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="./news-category.html">Khí tượng</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                 Quyết liệt chỉ đạo ban hành quy định về quy trình dự báo khí
                 tượng thủy văn
@@ -349,7 +342,7 @@
                   <!-- End of .single-blog-wrapper -->
                 </article>
                 <!-- End of .post-details -->
-                <div class="post-shares m-t-xs-60">
+                <!-- <div class="post-shares m-t-xs-60">
                   <div class="title">CHIA SẺ:</div>
                   <ul class="social-share social-share__rectangular">
                     <li>
@@ -373,7 +366,7 @@
                       >
                     </li>
                   </ul>
-                </div>
+                </div> -->
                 <!-- End of .post-shares -->
                 <hr class="m-t-xs-50 m-b-xs-60" />
                 <div class="comment-box">
@@ -386,30 +379,31 @@
                 <form action="#" class="comment-form row m-b-xs-60">
                   <div class="col-12">
                     <div class="form-group comment-message-field">
-                      <label for="comment-message">Bình luận</label>
+                      <!-- <label for="comment-message">Bình luận</label> -->
                       <textarea
                         name="comment-message"
                         id="comment-message"
                         rows="6"
+                        placeholder="Bình luận"
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label for="name">Tên</label>
-                      <input type="text" name="name" id="name" />
+                      <!-- <label for="name">Tên</label> -->
+                      <input type="text" placeholder="Tên" name="name" id="name" />
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="text" name="email" id="email" />
+                      <!-- <label for="email">Email</label> -->
+                      <input type="text" placeholder="Email" name="email" id="email" />
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label for="website">Website</label>
-                      <input type="text" name="website" id="website" />
+                      <!-- <label for="website">Website</label> -->
+                      <input type="text" placeholder="Website" name="website" id="website" />
                     </div>
                   </div>
                   <div class="col-12">
@@ -419,11 +413,11 @@
                 <div class="post-navigation-wrapper row m-b-xs-60">
                   <div class="post-navigation col-lg-6">
                     <div class="post-nav-content">
-                      <a href="#" class="prev-post">
+                      <a href="/" class="prev-post">
                         <i class="feather icon-chevron-left"></i>Tin trước
                       </a>
                       <h3>
-                        <a href="#"
+                        <a href="./news-detail.html"
                           >Quyết liệt chỉ đạo ban hành quy định về dự báo khí tượng thủy văn</a
                         >
                       </h3>
@@ -431,11 +425,11 @@
                   </div>
                   <div class="post-navigation text-right col-lg-6">
                     <div class="post-nav-content">
-                      <a href="#" class="next-post">
+                      <a href="/" class="next-post">
                         Tin tiếp theo<i class="feather icon-chevron-right"></i>
                       </a>
                       <h3>
-                        <a href="#"
+                        <a href="./news-detail.html"
                           >Quyết liệt chỉ đạo ban hành quy định về dự báo khí tượng thủy văn</a
                         >
                       </h3>
@@ -453,14 +447,16 @@
       </div>
       <!-- End of .post-single-wrapper -->
       <!-- footer starts -->
-      <footer class="page-footer bg-grey-dark-key">
+      <footer class="page-footer bg-footer">
         <div class="container">
           <div class="footer-top">
             <div class="row">
               <div class="col-md-4 col-12">
                 <div class="footer-widget">
                   <h2 class="footer-widget-title">
-                    <img src="assets/images/logo-black.png" alt="" />
+                    <a href="./index.html">
+                      <img src="assets/images/logo-black.png" alt="" />
+                    </a>
                   </h2>
                   <div class="footer-nav">
                     Căn cứ Quyết định số 690/QĐ-BTNMT ngày 08 tháng 3 năm 2018
@@ -478,13 +474,13 @@
                   <h2 class="footer-widget-title">
                     Tags
                   </h2>
-                  <ul class="footer-nav footer-tags">
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Thời tiết</a></li>
-                    <li><a href="#">Nội bộ</a></li>
-                    <li><a href="#">Khí tượng</a></li>
-                    <li><a href="#">Thủy văn</a></li>
-                    <li><a href="#">Môi trường</a></li>
+                  <ul class="footer-nav footer-tags clearfix">
+                    <li><a href="./about-us.html">Giới thiệu</a></li>
+                    <li><a href="./news-category.html">Thời tiết</a></li>
+                    <li><a href="./news-category.html">Nội bộ</a></li>
+                    <li><a href="./news-category.html">Khí tượng</a></li>
+                    <li><a href="./news-category.html">Thủy văn</a></li>
+                    <li><a href="./news-category.html">Môi trường</a></li>
                   </ul>
                   <!-- End of .footer-nav -->
                 </div>
