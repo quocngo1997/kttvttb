@@ -967,7 +967,7 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 
     .content-structure {
         overflow-x: scroll;
-        scroll-snap-type: x proximity;
+        scroll-snap-type: x mandatory;
         margin-top: 0;
         padding-top: 7rem;
         position: relative;
