@@ -755,7 +755,7 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     width: 0;
     height: 26px;
     border-left: 4px solid #ccc;
-    z-index: 1;
+    z-index: 0;
     top: -26px;
     left: 50%;
     margin-left: -8px;
@@ -967,6 +967,15 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 
     .content-structure {
         overflow-x: scroll;
+    }
+
+    .content-structure .wrapper-tooltip .tooltip {
+        font-size: 1.1rem;
+        width: 160%;
+    }
+
+    .content-structure .wrapper-tooltip .tooltip::after {
+        left: 37%;
     }
 }
 
