@@ -939,6 +939,7 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     .content-structure ul a,
     .content-structure ul .link-province {
         margin-bottom: -35px;
+        box-shadow: 4px 4px 9px -4px rgba(0, 0, 0, 0.2);
     }
     .content-structure .content {
         width: 700px;
