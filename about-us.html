@@ -57,7 +57,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
-<body>
+<body onload="chartCenter()">
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -282,8 +282,8 @@
                     </div>
                 </div>
             </div>
-            <div class="content-structure">
-                <div class="content">
+            <div class="content-structure" id="content-structure">
+                <div class="content" id="content">
                     <figure class="org-chart cf">
                         <ul class="administration">
                             <li>
@@ -514,15 +514,22 @@
         <!-- End of footer -->
         </div>
         <!-- End of .main-content -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function () {
-                var outerContent = $(".content-structure");
-                var innerContent = $(".content-structure > .content");
-                outerContent.scrollLeft(
-                    (innerContent.width() - outerContent.width()) / 2
-                );
-            });
+            function chartCenter(){
+                var outerContent = document.getElementsByClassName('content-structure');
+                var innerContent = document.getElementsByClassName('content');
+                var widthOuter = outerContent[0].clientWidth;
+                var widthInner = innerContent[0].clientWidth;
+                var widthTranslate = (widthInner - widthOuter)/2; 
+                innerContent[0].style.transform = "translateX(-" + widthTranslate + "px)";
+            }
+            // $(document).ready(function () {
+            //     var outerContent = $(".content-structure");
+            //     var innerContent = $(".content-structure > .content");
+            //     outerContent.scrollLeft(
+            //         (innerContent.width() - outerContent.width()) / 2
+            //     );
+            // });
         </script>
         <script src="./assets/js/main.js"></script>
 </body>
