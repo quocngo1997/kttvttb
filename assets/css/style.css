@@ -342,6 +342,7 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     height: 35%;
     align-items: center;
     display: flex;
+    line-height: 1.8rem;
     justify-content: center;
 }
 
@@ -420,47 +421,13 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 .content-structure .sections .name-province .name-position-under {
     text-transform: none;
     font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .content-structure {
     margin: 0 auto;
     margin-top: 4rem;
     max-width: 1252px;
-}
-
-@media (max-width: 1598px) {
-    .content-structure {
-        max-width: 1140px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .content-structure {
-        padding: 0 5px;
-    }
-
-}
-
-@media (max-width: 1300px) {
-
-    .content-structure ul a,
-    .content-structure ul .link-province {
-        font-size: 1rem !important;
-    }
-
-    .content-structure .name-position {
-        font-size: 0.9rem !important;
-    }
-
-    .content-structure .departments .department {
-        width: 16%;
-        margin-left: 0.33333333334%;
-        margin-right: 0.33333333334%;
-    }
-
-    .content-structure .sections .name-province .name-position-under {
-        font-size: 0.9rem;
-    }
 }
 
 .content-structure * {
@@ -559,7 +526,6 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     display: block;
     width: 0;
     height: 150px;
-    background: red;
     border-left: 4px solid #ccc;
     left: 50%;
     position: relative;
@@ -895,6 +861,113 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.1);
     background-image: none !important;
     transform: scale(1.05);
+}
+
+@media (max-width: 1598px) {
+    .content-structure {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .content-structure {
+        padding: 0 5px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .content-structure ul a,
+    .content-structure ul .link-province {
+        font-size: 1rem !important;
+    }
+
+    .content-structure .name-position {
+        font-size: 0.9rem !important;
+        line-height: 1.3rem;
+    }
+
+    .content-structure .departments .department {
+        width: 16%;
+        margin-left: 0.33333333334%;
+        margin-right: 0.33333333334%;
+    }
+
+    .content-structure .sections .name-province .name-position-under {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .content-structure .name-province {
+        line-height: 1.6rem;
+    }
+
+    .content-structure .sections .name-province .name-position-on {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .content-structure ul a,
+    .content-structure ul .link-province {
+        border: 2px solid #ccc;
+    }
+
+    .content-structure .departments:after {
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        border-left: 2px solid #ccc;
+        top: 153px;
+    }
+
+    .content-structure .department:before {
+        border-left: 2px solid #ccc;
+    }
+
+    .content-structure .subdirector:after {
+        height: 153px;
+        border-left: 2px solid #ccc;
+    }
+
+    .content-structure .departments>li:first-child {
+        border-right: 2px solid #ccc;
+    }
+
+    .content-structure .subdirector>li:first-child,
+    .content-structure .departments>li:first-child {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .content-structure .subdirector>li:first-child {
+        border-left: 2px solid #ccc;
+    }
+
+    .content-structure .name-position {
+        height: 40%;
+    }
+
+    .content-structure .name-province {
+        height: 60%;
+    }
+
+    .content-structure .department li {
+        height: 105px;
+    }
+
+    .content-structure ul a,
+    .content-structure ul .link-province {
+        margin-bottom: -35px;
+    }
+
+    .content-structure .content {
+        width: 700px;
+    }
+
+    .content-structure {
+        overflow-x: scroll;
+    }
 }
 
 /* Department/ section colors */
