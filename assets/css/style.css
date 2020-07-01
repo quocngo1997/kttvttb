@@ -955,6 +955,7 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     .content-structure .wrapper-tooltip .tooltip {
         font-size: 1.1rem;
         width: 160%;
+        left: -2px;
     }
     .content-structure .wrapper-tooltip .tooltip::after {
         left: 37%;
