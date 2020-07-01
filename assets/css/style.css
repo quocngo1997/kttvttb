@@ -414,11 +414,39 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 
 .content-structure {
     margin-top: 4rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .content-structure {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1599px) {
+    .content-structure {
+        max-width: 1252px;
+    }
 }
 
 @media (max-width: 1300px) {
     .content-structure {
         width: 1300px;
+    }
+
+    .content-structure ul a,
+    .content-structure ul .link-province {
+        font-size: 1.2rem !important;
+    }
+
+    .content-structure .name-position {
+        font-size: 1.1rem !important;
+    }
+
+    .content-structure .departments .department {
+        width: 16%;
+        margin-left: 0.33333333334%;
+        margin-right: 0.33333333334%;
     }
 }
 
@@ -861,7 +889,6 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     background-image: none !important;
     transform: scale(1.05);
 }
-
 
 /* Department/ section colors */
 
