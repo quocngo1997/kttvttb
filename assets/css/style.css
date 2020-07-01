@@ -968,6 +968,10 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
     .content-structure {
         overflow-x: scroll;
         scroll-snap-type: both mandatory;
+        margin-top: 0;
+        padding-top: 7rem;
+        position: relative;
+        top: -3rem;
     }
 
     .content-structure .content {
