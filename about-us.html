@@ -515,21 +515,16 @@
         </div>
         <!-- End of .main-content -->
         <script>
-            function chartCenter(){
-                var outerContent = document.getElementsByClassName('content-structure');
-                var innerContent = document.getElementsByClassName('content');
-                var widthOuter = outerContent[0].clientWidth;
-                var widthInner = innerContent[0].clientWidth;
-                var widthTranslate = (widthInner - widthOuter)/2; 
-                innerContent[0].style.transform = "translateX(-" + widthTranslate + "px)";
+            function chartCenter() {
+                var outerContent = document.getElementsByClassName('content-structure')[0];
+                var innerContent = document.getElementsByClassName('content')[0];
+                var widthOuter = outerContent.clientWidth;
+                var widthInner = innerContent.clientWidth;
+                var widthTranslate = (widthInner - widthOuter) / 2;
+                outerContent.scrollLeft = widthTranslate;
+                console.log(widthTranslate);
+                // innerContent[0].style.transform = "translateX(-" + widthTranslate + "px)";
             }
-            // $(document).ready(function () {
-            //     var outerContent = $(".content-structure");
-            //     var innerContent = $(".content-structure > .content");
-            //     outerContent.scrollLeft(
-            //         (innerContent.width() - outerContent.width()) / 2
-            //     );
-            // });
         </script>
         <script src="./assets/js/main.js"></script>
 </body>
