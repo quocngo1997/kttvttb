@@ -967,6 +967,11 @@ ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
 
     .content-structure {
         overflow-x: scroll;
+        scroll-snap-type: both mandatory;
+    }
+
+    .content-structure .content {
+        scroll-snap-align: center;
     }
 
     .content-structure .wrapper-tooltip .tooltip {
